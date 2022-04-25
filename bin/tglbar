@@ -1,0 +1,16 @@
+#!/bin/bash
+# Toggles eww bar and resizes bspwm padding.
+
+LOCK_FILE="$HOME/.cache/bar.lck"
+EWW_BIN="/usr/bin/eww"
+
+if [[ ! -f "$LOCK_FILE" ]]; then
+    touch "$LOCK_FILE"
+    ${EWW_BIN} close bar; sleep 0.4
+    bspc config left_padding 0
+else
+    rm "$LOCK_FILE"
+    bspc config left_padding 53
+
+    sleep 0.4; ${EWW_BIN} open bar
+fi

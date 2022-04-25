@@ -1,0 +1,46 @@
+#!/bin/bash
+
+# autostart
+bash $HOME/.config/bspwm/scripts/autostart.sh
+
+# use 1 to use the scripts/monitor.sh file (configure it file editing it!)
+MONITOR_SUPPORT=0
+
+function setopt () {
+  bspc config "$1" "$2"
+}
+
+# borders and gaps
+setopt border_width 0
+setopt window_gap 12
+
+# behaviour stuff
+setopt split_ratio 0.52
+setopt borderless_monocle false
+setopt gapless_monocle false
+setopt single_monocle false
+setopt left_padding 65
+
+# fullscreen
+bspc subscribe node_state | while read -r _ _ _ _ state flag; do
+  if [ "$state" != "fullscreen" ]; then
+    continue
+  fi
+  if [ "$flag" == on ]; then
+    setopt left_padding 0
+    eww -c ~/.config/eww close bar
+  else
+    setopt left_padding 65
+    eww -c ~/.config/eww open bar
+  fi
+done &
+
+# plank compatibility
+bspc rule -a Plank layer=above manage=on border=off
+
+# monitor
+if [[ $MONITOR_SUPPORT == 1 ]]; then
+  bash $HOME/.config/bspwm/scripts/monitor.sh
+else
+  bspc monitor primary -d 1 2 3 4 5 6
+fi

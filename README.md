@@ -18,7 +18,7 @@ by [Mangeshrex](https://github.com/Mangeshrex) but i'll add more themes (like ni
 - sxhkd
 - rofi
 - dunst
-- st (see [st config](#st))
+- st (see [st config](#st-config))
 - psmisc
 - fish
 - bat

@@ -11,6 +11,8 @@ by [Mangeshrex](https://github.com/Mangeshrex) but i'll add more themes (like ni
 
 ## Requirements
 
+- JetBrainsMono Nerd Font
+- Iosevka Nerd Font
 - eww
 - bspwm
 - sxhkd
@@ -54,3 +56,12 @@ cp -r ./home/* ~/
 5. Restart and start with `bspwm`
 
 6. Enjoy
+
+## St Config
+
+To make st works, compile it:
+
+```sh
+cd ~/.config/st
+sudo make clean install
+```

@@ -1,4 +1,8 @@
-# \#!/usr/bin/env eww-dotfiles-launcher start-component README.md --comment "Eww Dotfiles!"
+# Eww Dotfiles!
+
+```sh
+eww-dotfiles-launcher start-component README.md --comment "Eww Dotfiles!"
+```
 
 This is my eww dotfiles repository, in this moment am using [Everblush](https://github.com/Everblush)
 by [Mangeshrex](https://github.com/Mangeshrex) but i'll add more themes (like night and levuaska)

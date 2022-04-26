@@ -1,0 +1,32 @@
+! Xft
+Xft.dpi: 96
+Xft.antialias: true
+Xft.hinting: true
+Xft.rgba: rgb
+Xft.autohint: false
+Xft.hintstyle: hintfull
+Xft.lcdfilter: lcddefault
+
+! special
+*.foreground:    #D9D7D6
+*.background:    #061115
+
+! normal
+*.color0: #1C252C
+*.color1: #DF5B61
+*.color2: #78B892
+*.color3: #DE8F78
+*.color4: #6791C9
+*.color5: #BC83E3
+*.color6: #67AFC1
+*.color7: #D9D7D6
+
+! bright
+*.color8: #1C252C
+*.color9: #DF5B61
+*.color10: #78B892
+*.color11: #DE8F78
+*.color12: #6791C9
+*.color13: #BC83E3
+*.color14: #67AFC1
+*.color15: #D9D7D6

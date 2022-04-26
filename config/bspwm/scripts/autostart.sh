@@ -14,7 +14,7 @@ xrdb -merge $HOME/.Xresources
 dunst &
 
 # Wallpaper
-feh --bg-scale $HOME/.config/wallpapers/everblush/0day.png
+feh --bg-scale $HOME/.config/wallpapers/misc/nature-13.jpg
 
 # don't remove this please
 pkill bspc
